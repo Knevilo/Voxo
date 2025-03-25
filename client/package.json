@@ -1,0 +1,29 @@
+{
+  "name": "voxo-client",
+  "version": "0.1.0",
+  "description": "Vox Omnium Desktop Client",
+  "main": "dist/main/index.js",
+  "author": "Vox Omnium Team",
+  "license": "AGPL-3.0-or-later",
+  "scripts": {
+    "dev": "electron-webpack dev",
+    "build": "electron-webpack && electron-builder",
+    "test": "jest"
+  },
+  "dependencies": {
+    "electron": "^35.0.3",
+    "electron-updater": "^5.0.1",
+    "express": "^4.17.3",
+    "mediasoup-client": "^3.6.51",
+    "socket.io-client": "^4.4.1"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.6.12",
+    "electron": "^17.1.0",
+    "electron-builder": "^22.14.13",
+    "electron-updater": "^6.3.9",
+    "electron-webpack": "^2.8.2",
+    "typescript": "^4.5.5",
+    "webpack": "^5.69.1"
+  }
+}

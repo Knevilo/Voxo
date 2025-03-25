@@ -1,0 +1,31 @@
+{
+  "name": "vox-omnium",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Proximity Voice Chat mit modularer Adapter-Architektur",
+  "workspaces": [
+    "client",
+    "server",
+    "shared"
+  ],
+  "scripts": {
+    "dev:client": "yarn workspace voxo-client dev",
+    "dev:server": "yarn workspace voxo-server dev",
+    "dev": "concurrently \"yarn dev:client\" \"yarn dev:server\"",
+    "build:client": "yarn workspace voxo-client build",
+    "build:server": "yarn workspace voxo-server build",
+    "build": "yarn build:client && yarn build:server",
+    "test": "yarn workspaces run test",
+    "lint": "yarn workspaces run lint"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.13",
+    "concurrently": "^7.6.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.4",
+    "typescript": "^5.8.2"
+  },
+  "author": "Vox Omnium Team",
+  "license": "AGPL-3.0-or-later"
+}

@@ -1,0 +1,15 @@
+{
+    "name": "voxo-shared",
+    "version": "0.1.0",
+    "description": "Gemeinsame Typen und Utilities für Vox Omnium",
+    "main": "dist/index.js",
+    "author": "Vox Omnium Team",
+    "license": "AGPL-3.0-or-later",
+    "scripts": {
+      "build": "tsc",
+      "test": "jest"
+    },
+    "devDependencies": {
+      "typescript": "^4.5.5"
+    }
+  }

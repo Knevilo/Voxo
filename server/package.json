@@ -1,0 +1,25 @@
+{
+  "name": "voxo-server",
+  "version": "0.1.0",
+  "description": "Vox Omnium Voice Server",
+  "main": "dist/index.js",
+  "author": "Vox Omnium Team",
+  "license": "AGPL-3.0-or-later",
+  "scripts": {
+    "dev": "ts-node-dev --respawn src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "mediasoup": "^3.15.7",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/node": "^17.0.21",
+    "ts-node-dev": "^1.1.8",
+    "typescript": "^4.5.5"
+  }
+}
